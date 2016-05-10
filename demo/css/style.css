@@ -1,0 +1,115 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+#wrap{
+    position: absolute;
+    left:50%;
+    top:50%;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    -moz-transform: translate3d(-50%,-50%,0);
+    -ms-transform: translate3d(-50%,-50%,0);
+    -o-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+}
+.js-lightBox{
+    width:100px;
+    height:100px;
+}
+#mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /*   background: rgba(41, 41, 41, 0.6); */
+    z-index: 1000;
+    background: #292929;
+    opacity: 0.5;
+    filter: alpha(opacity: 50%);
+    display: none;
+}
+
+.photo_border {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    left: 50%;
+    margin-left: -150px;
+    z-index: 1001;
+    background: url("../assets/icon/loading.gif") no-repeat center center #fff;
+    display: none;
+}
+
+.photo_image {
+    display: none;
+}
+
+.photo {
+    position: relative;
+    border: 5px solid #fff;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.photo_btn {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    top: 0;
+}
+
+.photo_pre_btn {
+    left: 0;
+}
+
+.photo_pre_btn_show {
+    background: url("../assets/icon/prev.png") no-repeat;
+    background-position: 10% center;
+}
+
+.photo_next_btn {
+    right: 0;
+}
+
+.photo_next_btn_show {
+    background: url("../assets/icon/next.png") no-repeat;
+    background-position: 90% center;
+}
+
+.caption {
+    position: relative;
+    top: -65px;
+    width: auto;
+    height: 60px;
+    margin: 0 5px;
+    display: block;
+    background: rgba(126, 126, 126, 0.5);
+}
+
+.index {
+    padding-left: 10px;
+    color: #999;
+    height: 30px;
+    line-height: 30px;
+}
+
+.title {
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    text-shadow: 0 0 1px #ccc;
+}
+
+.caption_close_btn {
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    background: url("../assets/icon/close.png") no-repeat;
+    cursor: pointer;
+}
